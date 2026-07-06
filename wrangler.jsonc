@@ -1,0 +1,17 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "compatibility_date": "2026-05-17",
+  "name": "skland-daily-attendance",
+  "compatibility_flags": ["nodejs_als"],
+  "observability": {
+    "enabled": true
+  },
+  "kv_namespaces": [
+    {
+      "binding": "KV","id": "6e466d8118734098aed6ec0d3eb1ad48"
+    }
+  ],
+  "triggers": {
+    "crons": ["30 */2 * * *"]
+  }
+}
